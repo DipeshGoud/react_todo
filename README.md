@@ -25,7 +25,6 @@ This is a simple Todo application built with React and Redux. It allows users to
 
   - bash
   - git clone https://github.com/your-username/todo-app.git
-  - ```git clone https://github.com/your-username/todo-app.git
 
 2. Navigate into the project directory:
 
@@ -53,7 +52,6 @@ This is a simple Todo application built with React and Redux. It allows users to
 ## Deployment
 To deploy this app to GitHub Pages, run the following command:
 - npm run deploy
-- ``` npm run deploy
 
 ## Contributing
 - Contributions are welcome! Feel free to submit pull requests or open issues for any bugs or feature requests.
