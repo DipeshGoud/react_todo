@@ -66,5 +66,5 @@ To deploy this app to GitHub Pages, run the following command:
 - Special thanks to the Redux Toolkit team for simplifying Redux usage.
 
 ## Author
-- --Dipesh Gaud--
+- Dipesh_Gaud
 
