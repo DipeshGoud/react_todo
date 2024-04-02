@@ -1,0 +1,96 @@
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global styles */
+* {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* Styles for the root container of the application */
+.App {
+    background-image: url('./assets/background.png');
+    background-size: cover;
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Styles for h1 headings */
+h1 {
+    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Styles for h2 headings */
+h2 {
+    background: linear-gradient(to top, rgb(131, 111, 111), rgb(57, 57, 51));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Styles for text-muted elements */
+.text-muted {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    width: 75%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styles for the empty task container */
+.empty-task {
+    width: 100%;
+    height: 60vh;
+    background-image: url('./assets/empty-todo.png');
+    background-size: contain;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Styles for list items */
+li {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Styles for checkboxes */
+input[type="checkbox"] {
+    border: 2px solid black;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 750px) {
+    .input-row {
+        flex-direction: column !important;
+        gap: 1rem;
+    }
+
+    .text-muted {
+        display: flex;
+        width: 90% !important;
+    }
+
+    .list-con {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .text-muted {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .desc {
+        display: none;
+    }
+
+    .title-task {
+        flex-direction: column-reverse;
+    }
+}
