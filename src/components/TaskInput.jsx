@@ -92,7 +92,7 @@ const TaskInput = () => {
                         onChange={(e) => setPriority(e.target.value)}
                         className="form-select"
                     >
-                        <option value="Not Set" disabled selected hidden>Priority</option>
+                        <option value="None" disabled selected hidden>Priority</option>
                         <option value="High">High</option>
                         <option value="Medium">Medium</option>
                         <option value="Low">Low</option>
