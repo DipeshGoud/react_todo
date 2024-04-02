@@ -2,7 +2,7 @@
 
 This is a simple Todo application built with React and Redux. It allows users to create, edit, delete, and mark tasks as completed.
 
-![Todo App Screenshot](./screenshot.png)
+![Todo App Screenshot](./screenshot)
 
 ## Features
 
